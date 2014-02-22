@@ -1,0 +1,112 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #555;
+    font: normal 10pt Arial,Helvetica,sans-serif;
+    background: #E5E9EC;
+}
+
+a {
+    color: #0066CC;
+    text-decoration: underline;
+}
+
+#scroller-view{
+     margin: 50px auto 0;
+    position: relative;
+    width: 520px;
+}
+
+#scroller{
+    float: left;
+    /*    margin-bottom: 100px;
+        margin-top: 50px;*/
+    overflow: hidden;
+    width: 430px;
+}
+
+#scroller #items{
+    float: left;
+    /*height: 200px;*/
+    position: relative;
+    top: 87px;
+    width: 100%;
+}
+
+#items ul{
+    padding: 0;
+    position: relative;
+    width: 800px;
+}
+
+#items ul li{
+    display: block;
+    float: left;
+    list-style: none outside none;
+}
+
+#scroller a{
+    float: left;
+    padding: 0 1px;
+    margin-right: 3px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#scroller li.normal a{
+    background-image: url("images/file.png");
+    /*border: 1px solid;*/
+    /*height: 93px;*/
+    padding-top: 96px;
+    width: 68px;
+}
+
+.squeeze{
+    /*    height: 1px !important;
+        padding: 0 !important;*/
+    /*width: 1px !important;*/
+}
+
+.squeeze label{
+    display: none;
+}
+
+#scroller li.current a{
+    background-image: url("images/current_file.png");
+    padding-top: 182px;
+    position: relative;
+    /*top: -86px;*/
+    width: 136px;
+    z-index: 1000;
+}
+
+#scroller li.current{
+    position: relative;
+    top: -86px;
+}
+
+#scroller a img{
+    float: left;
+}
+
+#scroller a label{
+    clear: both;
+    cursor: pointer;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+#scroller-view a.prev{
+    float: left;
+    margin-right: 20px;
+    margin-top: 25%;
+}
+
+#scroller-view a.next{
+    float: left;
+    margin-left: 20px;
+    margin-top: 25%;
+}
